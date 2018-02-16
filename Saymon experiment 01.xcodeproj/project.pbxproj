@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		D7E0BD552036F303000157DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD542036F303000157DB /* AppDelegate.swift */; };
-		D7E0BD572036F304000157DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD562036F304000157DB /* ViewController.swift */; };
+		D7E0BD572036F304000157DB /* WelcomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD562036F304000157DB /* WelcomeScreenController.swift */; };
 		D7E0BD5A2036F304000157DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E0BD582036F304000157DB /* Main.storyboard */; };
 		D7E0BD5C2036F304000157DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E0BD5B2036F304000157DB /* Assets.xcassets */; };
 		D7E0BD5F2036F304000157DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E0BD5D2036F304000157DB /* LaunchScreen.storyboard */; };
+		D7E0BD6B2037247A000157DB /* LoginInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD6A2037247A000157DB /* LoginInController.swift */; };
+		D7E0BD6D20372506000157DB /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD6C20372506000157DB /* RegisterController.swift */; };
+		D7E0BD6F203725D4000157DB /* SimonGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD6E203725D4000157DB /* SimonGameController.swift */; };
+		D7E0BD712037260F000157DB /* HighScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD702037260F000157DB /* HighScoreController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D7E0BD512036F303000157DB /* Saymon experiment 01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saymon experiment 01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E0BD542036F303000157DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7E0BD562036F304000157DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7E0BD562036F304000157DB /* WelcomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenController.swift; sourceTree = "<group>"; };
 		D7E0BD592036F304000157DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7E0BD5B2036F304000157DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7E0BD5E2036F304000157DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7E0BD602036F304000157DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E0BD6A2037247A000157DB /* LoginInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInController.swift; sourceTree = "<group>"; };
+		D7E0BD6C20372506000157DB /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		D7E0BD6E203725D4000157DB /* SimonGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonGameController.swift; sourceTree = "<group>"; };
+		D7E0BD702037260F000157DB /* HighScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		D7E0BD532036F303000157DB /* Saymon experiment 01 */ = {
 			isa = PBXGroup;
 			children = (
-				D7E0BD542036F303000157DB /* AppDelegate.swift */,
-				D7E0BD562036F304000157DB /* ViewController.swift */,
-				D7E0BD582036F304000157DB /* Main.storyboard */,
+				D7E0BD6820372249000157DB /* Model */,
+				D7E0BD67203721F4000157DB /* View */,
+				D7E0BD66203721C7000157DB /* Controller */,
+				D7E0BD6920372257000157DB /* Supporting Files */,
 				D7E0BD5B2036F304000157DB /* Assets.xcassets */,
-				D7E0BD5D2036F304000157DB /* LaunchScreen.storyboard */,
 				D7E0BD602036F304000157DB /* Info.plist */,
 			);
 			path = "Saymon experiment 01";
+			sourceTree = "<group>";
+		};
+		D7E0BD66203721C7000157DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D7E0BD542036F303000157DB /* AppDelegate.swift */,
+				D7E0BD562036F304000157DB /* WelcomeScreenController.swift */,
+				D7E0BD6A2037247A000157DB /* LoginInController.swift */,
+				D7E0BD6C20372506000157DB /* RegisterController.swift */,
+				D7E0BD6E203725D4000157DB /* SimonGameController.swift */,
+				D7E0BD702037260F000157DB /* HighScoreController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D7E0BD67203721F4000157DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7E0BD5D2036F304000157DB /* LaunchScreen.storyboard */,
+				D7E0BD582036F304000157DB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7E0BD6820372249000157DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7E0BD6920372257000157DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7E0BD572036F304000157DB /* ViewController.swift in Sources */,
+				D7E0BD712037260F000157DB /* HighScoreController.swift in Sources */,
+				D7E0BD6F203725D4000157DB /* SimonGameController.swift in Sources */,
+				D7E0BD6D20372506000157DB /* RegisterController.swift in Sources */,
+				D7E0BD572036F304000157DB /* WelcomeScreenController.swift in Sources */,
+				D7E0BD6B2037247A000157DB /* LoginInController.swift in Sources */,
 				D7E0BD552036F303000157DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
