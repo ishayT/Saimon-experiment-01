@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58EB979DB10405F21FD2A49F /* Pods_Saimon_experiment_01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94C24410EDDA256F427785F /* Pods_Saimon_experiment_01.framework */; };
 		D7E0BD552036F303000157DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD542036F303000157DB /* AppDelegate.swift */; };
 		D7E0BD572036F304000157DB /* WelcomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD562036F304000157DB /* WelcomeScreenController.swift */; };
 		D7E0BD5A2036F304000157DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E0BD582036F304000157DB /* Main.storyboard */; };
@@ -16,10 +17,14 @@
 		D7E0BD6D20372506000157DB /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD6C20372506000157DB /* RegisterController.swift */; };
 		D7E0BD6F203725D4000157DB /* SimonGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD6E203725D4000157DB /* SimonGameController.swift */; };
 		D7E0BD712037260F000157DB /* HighScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD702037260F000157DB /* HighScoreController.swift */; };
+		D7FAB2BB20480D9900B7C64F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7FAB2BA20480D9900B7C64F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D7E0BD512036F303000157DB /* Saymon experiment 01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saymon experiment 01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7F042519311507CC1B6AB8 /* Pods-Saimon experiment 01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saimon experiment 01.release.xcconfig"; path = "Pods/Target Support Files/Pods-Saimon experiment 01/Pods-Saimon experiment 01.release.xcconfig"; sourceTree = "<group>"; };
+		96B6B4540EBE31E81A0F82D4 /* Pods-Saimon experiment 01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saimon experiment 01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saimon experiment 01/Pods-Saimon experiment 01.debug.xcconfig"; sourceTree = "<group>"; };
+		B94C24410EDDA256F427785F /* Pods_Saimon_experiment_01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saimon_experiment_01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E0BD512036F303000157DB /* Saimon experiment 01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saimon experiment 01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E0BD542036F303000157DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7E0BD562036F304000157DB /* WelcomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenController.swift; sourceTree = "<group>"; };
 		D7E0BD592036F304000157DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		D7E0BD6C20372506000157DB /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		D7E0BD6E203725D4000157DB /* SimonGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonGameController.swift; sourceTree = "<group>"; };
 		D7E0BD702037260F000157DB /* HighScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreController.swift; sourceTree = "<group>"; };
+		D7FAB2BA20480D9900B7C64F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,29 +43,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58EB979DB10405F21FD2A49F /* Pods_Saimon_experiment_01.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C06989426BF1E981A70A55A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B94C24410EDDA256F427785F /* Pods_Saimon_experiment_01.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D7E0BD482036F303000157DB = {
 			isa = PBXGroup;
 			children = (
-				D7E0BD532036F303000157DB /* Saymon experiment 01 */,
+				D7E0BD532036F303000157DB /* Saimon experiment 01 */,
 				D7E0BD522036F303000157DB /* Products */,
+				EE360668550A5E04B169256E /* Pods */,
+				C06989426BF1E981A70A55A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D7E0BD522036F303000157DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7E0BD512036F303000157DB /* Saymon experiment 01.app */,
+				D7E0BD512036F303000157DB /* Saimon experiment 01.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7E0BD532036F303000157DB /* Saymon experiment 01 */ = {
+		D7E0BD532036F303000157DB /* Saimon experiment 01 */ = {
 			isa = PBXGroup;
 			children = (
 				D7E0BD6820372249000157DB /* Model */,
@@ -68,8 +85,9 @@
 				D7E0BD6920372257000157DB /* Supporting Files */,
 				D7E0BD5B2036F304000157DB /* Assets.xcassets */,
 				D7E0BD602036F304000157DB /* Info.plist */,
+				D7FAB2BA20480D9900B7C64F /* GoogleService-Info.plist */,
 			);
-			path = "Saymon experiment 01";
+			path = "Saimon experiment 01";
 			sourceTree = "<group>";
 		};
 		D7E0BD66203721C7000157DB /* Controller */ = {
@@ -108,24 +126,36 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EE360668550A5E04B169256E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96B6B4540EBE31E81A0F82D4 /* Pods-Saimon experiment 01.debug.xcconfig */,
+				2D7F042519311507CC1B6AB8 /* Pods-Saimon experiment 01.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D7E0BD502036F303000157DB /* Saymon experiment 01 */ = {
+		D7E0BD502036F303000157DB /* Saimon experiment 01 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7E0BD632036F304000157DB /* Build configuration list for PBXNativeTarget "Saymon experiment 01" */;
+			buildConfigurationList = D7E0BD632036F304000157DB /* Build configuration list for PBXNativeTarget "Saimon experiment 01" */;
 			buildPhases = (
+				C9DB5FFCC2ABD788DEB2920B /* [CP] Check Pods Manifest.lock */,
 				D7E0BD4D2036F303000157DB /* Sources */,
 				D7E0BD4E2036F303000157DB /* Frameworks */,
 				D7E0BD4F2036F303000157DB /* Resources */,
+				24033FB477753DE74256D0F5 /* [CP] Embed Pods Frameworks */,
+				91014BADA52F80BDA3BE1D3A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Saymon experiment 01";
+			name = "Saimon experiment 01";
 			productName = "Saymon experiment 01";
-			productReference = D7E0BD512036F303000157DB /* Saymon experiment 01.app */;
+			productReference = D7E0BD512036F303000157DB /* Saimon experiment 01.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +174,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D7E0BD4C2036F303000157DB /* Build configuration list for PBXProject "Saymon experiment 01" */;
+			buildConfigurationList = D7E0BD4C2036F303000157DB /* Build configuration list for PBXProject "Saimon experiment 01" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,7 +187,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7E0BD502036F303000157DB /* Saymon experiment 01 */,
+				D7E0BD502036F303000157DB /* Saimon experiment 01 */,
 			);
 		};
 /* End PBXProject section */
@@ -168,12 +198,77 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7E0BD5F2036F304000157DB /* LaunchScreen.storyboard in Resources */,
+				D7FAB2BB20480D9900B7C64F /* GoogleService-Info.plist in Resources */,
 				D7E0BD5C2036F304000157DB /* Assets.xcassets in Resources */,
 				D7E0BD5A2036F304000157DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24033FB477753DE74256D0F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Saimon experiment 01/Pods-Saimon experiment 01-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Saimon experiment 01/Pods-Saimon experiment 01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91014BADA52F80BDA3BE1D3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Saimon experiment 01/Pods-Saimon experiment 01-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9DB5FFCC2ABD788DEB2920B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Saimon experiment 01-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D7E0BD4D2036F303000157DB /* Sources */ = {
@@ -320,12 +415,13 @@
 		};
 		D7E0BD642036F304000157DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96B6B4540EBE31E81A0F82D4 /* Pods-Saimon experiment 01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Saymon experiment 01/Info.plist";
+				INFOPLIST_FILE = "Saimon experiment 01/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ishayt.Saymon-experiment-01";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ishayt.Saimon-experiment-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,12 +430,13 @@
 		};
 		D7E0BD652036F304000157DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D7F042519311507CC1B6AB8 /* Pods-Saimon experiment 01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Saymon experiment 01/Info.plist";
+				INFOPLIST_FILE = "Saimon experiment 01/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ishayt.Saymon-experiment-01";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ishayt.Saimon-experiment-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -349,7 +446,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7E0BD4C2036F303000157DB /* Build configuration list for PBXProject "Saymon experiment 01" */ = {
+		D7E0BD4C2036F303000157DB /* Build configuration list for PBXProject "Saimon experiment 01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7E0BD612036F304000157DB /* Debug */,
@@ -358,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7E0BD632036F304000157DB /* Build configuration list for PBXNativeTarget "Saymon experiment 01" */ = {
+		D7E0BD632036F304000157DB /* Build configuration list for PBXNativeTarget "Saimon experiment 01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7E0BD642036F304000157DB /* Debug */,
