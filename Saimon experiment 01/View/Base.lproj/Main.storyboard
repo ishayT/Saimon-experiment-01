@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,39 +14,61 @@
         <!--welcome-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WelcomeScreenController" customModule="Saymon_experiment_01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeScreenController" customModule="Saimon_experiment_01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLu-Ot-YOI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-background-blur" translatesAutoresizingMaskIntoConstraints="NO" id="nlG-Fl-7Jc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLu-Ot-YOI" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
                                 <rect key="frame" x="59" y="318" width="255" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Register"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="RegisterAndLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="01Q-uK-EXE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NK-sw-aco">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NK-sw-aco" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
                                 <rect key="frame" x="59" y="396" width="255" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Login"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="RegisterAndLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kKW-Ty-x5O"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq2-LP-79n">
-                                <rect key="frame" x="164" y="126" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="color"/>
-                                <connections>
-                                    <action selector="changColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BdC-MJ-Klp"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nlG-Fl-7Jc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UX4-eB-LFZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nlG-Fl-7Jc" secondAttribute="trailing" id="as1-Dz-naf"/>
+                            <constraint firstAttribute="bottom" secondItem="nlG-Fl-7Jc" secondAttribute="bottom" id="nV8-2d-ajG"/>
+                            <constraint firstItem="nlG-Fl-7Jc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xeG-Gg-QRb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="welcome" id="uhq-TD-72f"/>
@@ -63,11 +86,56 @@
         <!--Login In Controller-->
         <scene sceneID="zRU-gX-Hqb">
             <objects>
-                <viewController id="5i6-cC-j8M" customClass="LoginInController" customModule="Saymon_experiment_01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5i6-cC-j8M" customClass="LoginInController" customModule="Saimon_experiment_01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ui3-n0-lv0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saimonBackgroundL&amp;R" translatesAutoresizingMaskIntoConstraints="NO" id="LSK-mi-eyx">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AyA-jE-Ymg" customClass="DesignableView" customModule="Saimon_experiment_01" customModuleProvider="target">
+                                <rect key="frame" x="63" y="209" width="250" height="250"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQD-b0-bAm" customClass="DesignableView" customModule="Saimon_experiment_01" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="-26" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lockL&amp;R" translatesAutoresizingMaskIntoConstraints="NO" id="MB9-oz-vzh">
+                                        <rect key="frame" x="105" y="-21" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="KQD-b0-bAm" secondAttribute="bottom" constant="226" id="4SX-it-hBs"/>
+                                    <constraint firstAttribute="width" secondItem="AyA-jE-Ymg" secondAttribute="height" multiplier="1:1" id="D0L-xv-pfD"/>
+                                    <constraint firstItem="KQD-b0-bAm" firstAttribute="leading" secondItem="AyA-jE-Ymg" secondAttribute="leading" constant="100" id="D4W-hW-Gst"/>
+                                    <constraint firstItem="KQD-b0-bAm" firstAttribute="top" secondItem="AyA-jE-Ymg" secondAttribute="top" constant="-26" id="Ioy-jN-hAb"/>
+                                    <constraint firstAttribute="width" constant="250" id="L7G-9A-9fG"/>
+                                    <constraint firstItem="KQD-b0-bAm" firstAttribute="centerX" secondItem="AyA-jE-Ymg" secondAttribute="centerX" id="fdQ-wb-cKH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6h0-Hi-Gse" firstAttribute="trailing" secondItem="LSK-mi-eyx" secondAttribute="trailing" id="QWT-J3-hgf"/>
+                            <constraint firstItem="LSK-mi-eyx" firstAttribute="leading" secondItem="6h0-Hi-Gse" secondAttribute="leading" id="XBf-A8-9XG"/>
+                            <constraint firstItem="6h0-Hi-Gse" firstAttribute="bottom" secondItem="LSK-mi-eyx" secondAttribute="bottom" id="gxW-2T-Wcs"/>
+                            <constraint firstItem="AyA-jE-Ymg" firstAttribute="centerX" secondItem="ui3-n0-lv0" secondAttribute="centerX" id="jK9-X8-B1C"/>
+                            <constraint firstItem="AyA-jE-Ymg" firstAttribute="centerY" secondItem="ui3-n0-lv0" secondAttribute="centerY" id="jgO-u0-G5Y"/>
+                            <constraint firstItem="LSK-mi-eyx" firstAttribute="top" secondItem="6h0-Hi-Gse" secondAttribute="top" id="tDP-Q6-g4V"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6h0-Hi-Gse"/>
                     </view>
                     <connections>
@@ -81,11 +149,112 @@
         <!--Register Controller-->
         <scene sceneID="wDN-R5-Aiu">
             <objects>
-                <viewController id="fPA-cB-J9M" customClass="RegisterController" customModule="Saymon_experiment_01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fPA-cB-J9M" customClass="RegisterController" customModule="Saimon_experiment_01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3mN-YM-LMY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saimonBackgroundL&amp;R" translatesAutoresizingMaskIntoConstraints="NO" id="Ax7-1F-qU6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.60308754280821919" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4K-GU-qej" userLabel="View For L&amp;R" customClass="DesignableView" customModule="Saimon_experiment_01" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFj-8M-Jge" userLabel="View For Lock" customClass="DesignableView" customModule="Saimon_experiment_01" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="-24" width="50" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lockL&amp;R" translatesAutoresizingMaskIntoConstraints="NO" id="uHo-fh-Tq7">
+                                                <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="LC3-zp-WMZ">
+                                        <rect key="frame" x="30" y="27" width="190" height="196.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MaB-K8-rAN">
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CaT-0q-anV">
+                                                <rect key="frame" x="0.0" y="44" width="190" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPi-1l-JBg">
+                                                <rect key="frame" x="0.0" y="88" width="190" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0b-q9-Ctf">
+                                                <rect key="frame" x="0.0" y="132" width="190" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eA-Jw-7Mx" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="166.5" width="190" height="30"/>
+                                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Register">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="LC3-zp-WMZ" firstAttribute="leading" secondItem="h4K-GU-qej" secondAttribute="leading" constant="30" id="3P4-Sw-9Z8"/>
+                                    <constraint firstAttribute="trailing" secondItem="LC3-zp-WMZ" secondAttribute="trailing" constant="30" id="6Ge-0W-KRQ"/>
+                                    <constraint firstItem="LC3-zp-WMZ" firstAttribute="leading" secondItem="h4K-GU-qej" secondAttribute="leading" constant="30" id="6Kt-LR-Gcl"/>
+                                    <constraint firstAttribute="width" constant="250" id="7Yn-31-7ps"/>
+                                    <constraint firstItem="aFj-8M-Jge" firstAttribute="centerX" secondItem="h4K-GU-qej" secondAttribute="centerX" id="HGN-9k-0Zd"/>
+                                    <constraint firstItem="aFj-8M-Jge" firstAttribute="leading" secondItem="h4K-GU-qej" secondAttribute="leading" constant="100" id="RrI-zG-kwE"/>
+                                    <constraint firstItem="aFj-8M-Jge" firstAttribute="top" secondItem="h4K-GU-qej" secondAttribute="top" constant="-24" id="StD-lU-Age"/>
+                                    <constraint firstAttribute="width" secondItem="h4K-GU-qej" secondAttribute="height" multiplier="1:1" id="VAk-p5-pq5"/>
+                                    <constraint firstItem="LC3-zp-WMZ" firstAttribute="centerY" secondItem="h4K-GU-qej" secondAttribute="centerY" id="YsN-wb-Kp3"/>
+                                    <constraint firstAttribute="bottom" secondItem="aFj-8M-Jge" secondAttribute="bottom" constant="224" id="sT1-V9-sxU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="h4K-GU-qej" firstAttribute="centerY" secondItem="3mN-YM-LMY" secondAttribute="centerY" id="1bO-FA-8lp"/>
+                            <constraint firstItem="MG3-P0-skG" firstAttribute="trailing" secondItem="Ax7-1F-qU6" secondAttribute="trailing" id="8Ta-7b-yQq"/>
+                            <constraint firstItem="MG3-P0-skG" firstAttribute="bottom" secondItem="Ax7-1F-qU6" secondAttribute="bottom" id="Bvd-J5-rhd"/>
+                            <constraint firstItem="h4K-GU-qej" firstAttribute="centerX" secondItem="3mN-YM-LMY" secondAttribute="centerX" id="FdL-IE-FU8"/>
+                            <constraint firstItem="Ax7-1F-qU6" firstAttribute="top" secondItem="MG3-P0-skG" secondAttribute="top" id="Mx9-PJ-ZTc"/>
+                            <constraint firstItem="Ax7-1F-qU6" firstAttribute="leading" secondItem="MG3-P0-skG" secondAttribute="leading" id="bAB-mU-E5h"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MG3-P0-skG"/>
                     </view>
                     <connections>
@@ -99,16 +268,11 @@
         <!--Simon Game Controller-->
         <scene sceneID="H2t-oU-mPE">
             <objects>
-                <viewController id="fha-ap-wiS" customClass="SimonGameController" customModule="Saymon_experiment_01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fha-ap-wiS" customClass="SimonGameController" customModule="Saimon_experiment_01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RlM-Wy-mum">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POq-2x-i8f">
-                                <rect key="frame" x="159" y="306" width="58" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="startButton"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3C-Qk-Wfm">
                                 <rect key="frame" x="76" y="229" width="96" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -129,6 +293,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="saimonButton1"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1K-9U-Ouw" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ac4-90-gil"/>
@@ -144,7 +321,7 @@
         <!--High Score Controller-->
         <scene sceneID="ccK-Uk-eJp">
             <objects>
-                <viewController id="WIK-A1-4LG" customClass="HighScoreController" customModule="Saymon_experiment_01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WIK-A1-4LG" customClass="HighScoreController" customModule="Saimon_experiment_01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hW9-ZT-BSC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,7 +331,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cFZ-J6-AIO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cFZ-J6-AIO">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cFZ-J6-AIO" id="Si6-Xo-fbK">
@@ -193,14 +370,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="blue-background-blur" width="960" height="672"/>
+        <image name="lockL&amp;R" width="256" height="256"/>
+        <image name="saimonBackgroundL&amp;R" width="150" height="150"/>
         <image name="saimonButton1" width="96" height="94"/>
         <image name="saimonButton2" width="94" height="89"/>
         <image name="saimonButton3" width="93" height="87"/>
         <image name="saimonButton4" width="92" height="87"/>
-        <image name="startButton" width="58" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Yg8-V9-AUc"/>
-        <segue reference="qjw-hF-bON"/>
+        <segue reference="J5L-PF-afb"/>
+        <segue reference="RdI-Fz-Oog"/>
     </inferredMetricsTieBreakers>
 </document>

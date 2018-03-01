@@ -18,6 +18,8 @@
 		D7E0BD6F203725D4000157DB /* SimonGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD6E203725D4000157DB /* SimonGameController.swift */; };
 		D7E0BD712037260F000157DB /* HighScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD702037260F000157DB /* HighScoreController.swift */; };
 		D7FAB2BB20480D9900B7C64F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7FAB2BA20480D9900B7C64F /* GoogleService-Info.plist */; };
+		D7FAB2BE20487DB400B7C64F /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FAB2BD20487DB400B7C64F /* DesignableView.swift */; };
+		D7FAB2C020487E6B00B7C64F /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FAB2BF20487E6B00B7C64F /* DesignableButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		D7E0BD6E203725D4000157DB /* SimonGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonGameController.swift; sourceTree = "<group>"; };
 		D7E0BD702037260F000157DB /* HighScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreController.swift; sourceTree = "<group>"; };
 		D7FAB2BA20480D9900B7C64F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D7FAB2BD20487DB400B7C64F /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		D7FAB2BF20487E6B00B7C64F /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 				D7E0BD6820372249000157DB /* Model */,
 				D7E0BD67203721F4000157DB /* View */,
 				D7E0BD66203721C7000157DB /* Controller */,
+				D7FAB2BC20487D3400B7C64F /* Design */,
 				D7E0BD6920372257000157DB /* Supporting Files */,
 				D7E0BD5B2036F304000157DB /* Assets.xcassets */,
 				D7E0BD602036F304000157DB /* Info.plist */,
@@ -124,6 +129,15 @@
 			children = (
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7FAB2BC20487D3400B7C64F /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				D7FAB2BD20487DB400B7C64F /* DesignableView.swift */,
+				D7FAB2BF20487E6B00B7C64F /* DesignableButton.swift */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 		EE360668550A5E04B169256E /* Pods */ = {
@@ -278,7 +292,9 @@
 				D7E0BD712037260F000157DB /* HighScoreController.swift in Sources */,
 				D7E0BD6F203725D4000157DB /* SimonGameController.swift in Sources */,
 				D7E0BD6D20372506000157DB /* RegisterController.swift in Sources */,
+				D7FAB2C020487E6B00B7C64F /* DesignableButton.swift in Sources */,
 				D7E0BD572036F304000157DB /* WelcomeScreenController.swift in Sources */,
+				D7FAB2BE20487DB400B7C64F /* DesignableView.swift in Sources */,
 				D7E0BD6B2037247A000157DB /* LoginInController.swift in Sources */,
 				D7E0BD552036F303000157DB /* AppDelegate.swift in Sources */,
 			);
