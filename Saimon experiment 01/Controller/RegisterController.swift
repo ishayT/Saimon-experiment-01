@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterController: UIViewController {
 
+    
+    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    
+    @IBOutlet weak var userNameTF: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,18 +26,25 @@ class RegisterController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //press to set up a user on Firebase
+    @IBAction func registerBTNPressed(_ sender: DesignableButton) {
+        
+        Auth.auth().createUser(withEmail: emailTF.text!, password: passwordTF.text!) { (uesr, error) in
+            
+            if error != nil {
+                print(error!)
+            } else {
+                print("Registration Succesful!")
+                
+                self.performSegue(withIdentifier: "goToGameFR", sender: self)
+            }
+        }
+        
+        
     }
-    */
+    
 
 }

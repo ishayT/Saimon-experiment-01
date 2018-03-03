@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		58EB979DB10405F21FD2A49F /* Pods_Saimon_experiment_01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94C24410EDDA256F427785F /* Pods_Saimon_experiment_01.framework */; };
+		D7C47694204AC8CA0077260A /* MarkerFelt.ttc in Resources */ = {isa = PBXBuildFile; fileRef = D7C47693204AC8C90077260A /* MarkerFelt.ttc */; };
+		D7C47696204AC9F10077260A /* Herculanum.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C47695204AC9F00077260A /* Herculanum.ttf */; };
+		D7C47698204AD5550077260A /* Chalkduster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C47697204AD5540077260A /* Chalkduster.ttf */; };
 		D7E0BD552036F303000157DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD542036F303000157DB /* AppDelegate.swift */; };
 		D7E0BD572036F304000157DB /* WelcomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD562036F304000157DB /* WelcomeScreenController.swift */; };
 		D7E0BD5A2036F304000157DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E0BD582036F304000157DB /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 		2D7F042519311507CC1B6AB8 /* Pods-Saimon experiment 01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saimon experiment 01.release.xcconfig"; path = "Pods/Target Support Files/Pods-Saimon experiment 01/Pods-Saimon experiment 01.release.xcconfig"; sourceTree = "<group>"; };
 		96B6B4540EBE31E81A0F82D4 /* Pods-Saimon experiment 01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saimon experiment 01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saimon experiment 01/Pods-Saimon experiment 01.debug.xcconfig"; sourceTree = "<group>"; };
 		B94C24410EDDA256F427785F /* Pods_Saimon_experiment_01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saimon_experiment_01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C47693204AC8C90077260A /* MarkerFelt.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarkerFelt.ttc; sourceTree = "<group>"; };
+		D7C47695204AC9F00077260A /* Herculanum.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Herculanum.ttf; sourceTree = "<group>"; };
+		D7C47697204AD5540077260A /* Chalkduster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chalkduster.ttf; sourceTree = "<group>"; };
 		D7E0BD512036F303000157DB /* Saimon experiment 01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saimon experiment 01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E0BD542036F303000157DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7E0BD562036F304000157DB /* WelcomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenController.swift; sourceTree = "<group>"; };
@@ -134,6 +140,9 @@
 		D7FAB2BC20487D3400B7C64F /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				D7C47695204AC9F00077260A /* Herculanum.ttf */,
+				D7C47697204AD5540077260A /* Chalkduster.ttf */,
+				D7C47693204AC8C90077260A /* MarkerFelt.ttc */,
 				D7FAB2BD20487DB400B7C64F /* DesignableView.swift */,
 				D7FAB2BF20487E6B00B7C64F /* DesignableButton.swift */,
 			);
@@ -211,9 +220,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C47696204AC9F10077260A /* Herculanum.ttf in Resources */,
+				D7C47698204AD5550077260A /* Chalkduster.ttf in Resources */,
 				D7E0BD5F2036F304000157DB /* LaunchScreen.storyboard in Resources */,
 				D7FAB2BB20480D9900B7C64F /* GoogleService-Info.plist in Resources */,
 				D7E0BD5C2036F304000157DB /* Assets.xcassets in Resources */,
+				D7C47694204AC8CA0077260A /* MarkerFelt.ttc in Resources */,
 				D7E0BD5A2036F304000157DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

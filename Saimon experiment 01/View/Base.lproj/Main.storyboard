@@ -10,6 +10,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chalkduster.ttf">
+            <string>Chalkduster</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--welcome-->
         <scene sceneID="tne-QT-ifu">
@@ -22,8 +27,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saimonBackground03" translatesAutoresizingMaskIntoConstraints="NO" id="nlG-Fl-7Jc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLu-Ot-YOI" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
-                                <rect key="frame" x="46" y="497" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLu-Ot-YOI" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
+                                <rect key="frame" x="46" y="497" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.6504976455479452" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -44,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NK-sw-aco" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
-                                <rect key="frame" x="233" y="497" width="100" height="100"/>
+                                <rect key="frame" x="233" y="497" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.65084546232876717" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Login">
@@ -65,20 +71,21 @@
                                     <action selector="RegisterAndLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kKW-Ty-x5O"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saimon (1)" translatesAutoresizingMaskIntoConstraints="NO" id="rOQ-9E-2hx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="saimon (1)" translatesAutoresizingMaskIntoConstraints="NO" id="rOQ-9E-2hx">
                                 <rect key="frame" x="94" y="233" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="rOQ-9E-2hx" secondAttribute="height" multiplier="1:1" id="Aum-TP-2aw"/>
-                                    <constraint firstAttribute="width" constant="200" id="Xz8-Mg-0cb"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saimon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4d-aN-Drq">
+                                <rect key="frame" x="85" y="135" width="204" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="50"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.67136665239726023" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="rOQ-9E-2hx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="36v-T9-phU"/>
                             <constraint firstItem="nlG-Fl-7Jc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UX4-eB-LFZ"/>
-                            <constraint firstItem="lLu-Ot-YOI" firstAttribute="top" secondItem="rOQ-9E-2hx" secondAttribute="bottom" constant="64" id="WPZ-PO-WcR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nlG-Fl-7Jc" secondAttribute="trailing" id="as1-Dz-naf"/>
-                            <constraint firstItem="rOQ-9E-2hx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="lcJ-9n-IxU"/>
                             <constraint firstAttribute="bottom" secondItem="nlG-Fl-7Jc" secondAttribute="bottom" id="nV8-2d-ajG"/>
                             <constraint firstItem="nlG-Fl-7Jc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xeG-Gg-QRb"/>
                         </constraints>
@@ -275,6 +282,9 @@
                                                         <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="registerBTNPressed:" destination="fPA-cB-J9M" eventType="touchUpInside" id="vLu-Aa-4DO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -313,7 +323,11 @@
                         <viewLayoutGuide key="safeArea" id="MG3-P0-skG"/>
                     </view>
                     <connections>
-                        <segue destination="fha-ap-wiS" kind="show" id="RdI-Fz-Oog"/>
+                        <outlet property="emailTF" destination="MaB-K8-rAN" id="hqQ-Uh-akA"/>
+                        <outlet property="errorLabel" destination="c0b-q9-Ctf" id="oX6-FA-6xR"/>
+                        <outlet property="passwordTF" destination="CaT-0q-anV" id="EB0-hS-iam"/>
+                        <outlet property="userNameTF" destination="pPi-1l-JBg" id="fiW-K8-g55"/>
+                        <segue destination="fha-ap-wiS" kind="show" identifier="goToGameFR" id="RdI-Fz-Oog"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CmH-Qd-4bx" userLabel="First Responder" sceneMemberID="firstResponder"/>
