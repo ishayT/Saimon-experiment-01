@@ -42,8 +42,12 @@ class RegisterController: UIViewController {
                 self.performSegue(withIdentifier: "goToGameFR", sender: self)
             }
         }
+    }
+    
+    
+    @IBAction func goTogame(_ sender: UIButton) {
         
-        
+        performSegue(withIdentifier: "goToGameFR", sender: self)
     }
     
 

@@ -11,6 +11,11 @@
 		D7C47694204AC8CA0077260A /* MarkerFelt.ttc in Resources */ = {isa = PBXBuildFile; fileRef = D7C47693204AC8C90077260A /* MarkerFelt.ttc */; };
 		D7C47696204AC9F10077260A /* Herculanum.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C47695204AC9F00077260A /* Herculanum.ttf */; };
 		D7C47698204AD5550077260A /* Chalkduster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C47697204AD5540077260A /* Chalkduster.ttf */; };
+		D7C4769E204AD8210077260A /* Luminari.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C47699204AD81D0077260A /* Luminari.ttf */; };
+		D7C4769F204AD8210077260A /* SnellRoundhand.ttc in Resources */ = {isa = PBXBuildFile; fileRef = D7C4769A204AD81D0077260A /* SnellRoundhand.ttc */; };
+		D7C476A0204AD8210077260A /* Zapfino.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C4769B204AD81E0077260A /* Zapfino.ttf */; };
+		D7C476A1204AD8210077260A /* Savoye LET.ttc in Resources */ = {isa = PBXBuildFile; fileRef = D7C4769C204AD81F0077260A /* Savoye LET.ttc */; };
+		D7C476A2204AD8210077260A /* Trattatello.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C4769D204AD8200077260A /* Trattatello.ttf */; };
 		D7E0BD552036F303000157DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD542036F303000157DB /* AppDelegate.swift */; };
 		D7E0BD572036F304000157DB /* WelcomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E0BD562036F304000157DB /* WelcomeScreenController.swift */; };
 		D7E0BD5A2036F304000157DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E0BD582036F304000157DB /* Main.storyboard */; };
@@ -32,6 +37,11 @@
 		D7C47693204AC8C90077260A /* MarkerFelt.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarkerFelt.ttc; sourceTree = "<group>"; };
 		D7C47695204AC9F00077260A /* Herculanum.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Herculanum.ttf; sourceTree = "<group>"; };
 		D7C47697204AD5540077260A /* Chalkduster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chalkduster.ttf; sourceTree = "<group>"; };
+		D7C47699204AD81D0077260A /* Luminari.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Luminari.ttf; sourceTree = "<group>"; };
+		D7C4769A204AD81D0077260A /* SnellRoundhand.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SnellRoundhand.ttc; sourceTree = "<group>"; };
+		D7C4769B204AD81E0077260A /* Zapfino.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zapfino.ttf; sourceTree = "<group>"; };
+		D7C4769C204AD81F0077260A /* Savoye LET.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Savoye LET.ttc"; sourceTree = "<group>"; };
+		D7C4769D204AD8200077260A /* Trattatello.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trattatello.ttf; sourceTree = "<group>"; };
 		D7E0BD512036F303000157DB /* Saimon experiment 01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saimon experiment 01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E0BD542036F303000157DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7E0BD562036F304000157DB /* WelcomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenController.swift; sourceTree = "<group>"; };
@@ -142,6 +152,11 @@
 			children = (
 				D7C47695204AC9F00077260A /* Herculanum.ttf */,
 				D7C47697204AD5540077260A /* Chalkduster.ttf */,
+				D7C47699204AD81D0077260A /* Luminari.ttf */,
+				D7C4769C204AD81F0077260A /* Savoye LET.ttc */,
+				D7C4769A204AD81D0077260A /* SnellRoundhand.ttc */,
+				D7C4769D204AD8200077260A /* Trattatello.ttf */,
+				D7C4769B204AD81E0077260A /* Zapfino.ttf */,
 				D7C47693204AC8C90077260A /* MarkerFelt.ttc */,
 				D7FAB2BD20487DB400B7C64F /* DesignableView.swift */,
 				D7FAB2BF20487E6B00B7C64F /* DesignableButton.swift */,
@@ -221,12 +236,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7C47696204AC9F10077260A /* Herculanum.ttf in Resources */,
+				D7C4769E204AD8210077260A /* Luminari.ttf in Resources */,
 				D7C47698204AD5550077260A /* Chalkduster.ttf in Resources */,
+				D7C476A2204AD8210077260A /* Trattatello.ttf in Resources */,
 				D7E0BD5F2036F304000157DB /* LaunchScreen.storyboard in Resources */,
+				D7C476A0204AD8210077260A /* Zapfino.ttf in Resources */,
 				D7FAB2BB20480D9900B7C64F /* GoogleService-Info.plist in Resources */,
 				D7E0BD5C2036F304000157DB /* Assets.xcassets in Resources */,
 				D7C47694204AC8CA0077260A /* MarkerFelt.ttc in Resources */,
+				D7C4769F204AD8210077260A /* SnellRoundhand.ttc in Resources */,
 				D7E0BD5A2036F304000157DB /* Main.storyboard in Resources */,
+				D7C476A1204AD8210077260A /* Savoye LET.ttc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

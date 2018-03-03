@@ -47,6 +47,10 @@ class WelcomeScreenController: UIViewController {
     }
     
 
+    @IBAction func goToGame(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "goToGame", sender: self)
+    }
     
     
     

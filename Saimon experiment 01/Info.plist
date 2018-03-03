@@ -4,6 +4,11 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Zapfino.ttf</string>
+		<string>Trattatello.ttf</string>
+		<string>SnellRoundhand.ttc</string>
+		<string>Savoye LET.ttc</string>
+		<string>Luminari.ttf</string>
 		<string>Chalkduster.ttf</string>
 		<string>Herculanum.ttf</string>
 		<string>MarkerFelt.ttc</string>

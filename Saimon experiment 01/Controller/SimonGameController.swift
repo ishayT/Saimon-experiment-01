@@ -14,22 +14,22 @@ class SimonGameController: UIViewController {
         super.viewDidLoad()
 
         self.title = "saimon"
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "Logout", style: .plain, target: self, action: #selector(logout(sender:)))
+        
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc func logout(sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "goToMain", sender: self)
     }
-    */
 
 }

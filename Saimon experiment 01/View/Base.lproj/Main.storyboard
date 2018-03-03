@@ -11,8 +11,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Chalkduster.ttf">
-            <string>Chalkduster</string>
+        <array key="Luminari.ttf">
+            <string>Luminari-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -76,10 +76,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saimon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4d-aN-Drq">
-                                <rect key="frame" x="85" y="135" width="204" height="64"/>
+                                <rect key="frame" x="81" y="124" width="213" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="50"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.67136665239726023" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Luminari-Regular" family="Luminari" pointSize="60"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -95,7 +95,7 @@
                     <connections>
                         <segue destination="fPA-cB-J9M" kind="show" identifier="segueToRegister" id="4hy-VY-WfN"/>
                         <segue destination="5i6-cC-j8M" kind="show" identifier="segueToLogin" id="eDY-lO-F7d"/>
-                        <segue destination="fha-ap-wiS" kind="show" id="qjw-hF-bON"/>
+                        <segue destination="fha-ap-wiS" kind="show" identifier="goToGame" id="qjw-hF-bON"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -111,7 +111,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saimonBackgroundL&amp;R" translatesAutoresizingMaskIntoConstraints="NO" id="LSK-mi-eyx">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AyA-jE-Ymg" customClass="DesignableView" customModule="Saimon_experiment_01" customModuleProvider="target">
                                 <rect key="frame" x="63" y="209" width="250" height="250"/>
@@ -218,7 +218,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saimonBackgroundL&amp;R" translatesAutoresizingMaskIntoConstraints="NO" id="Ax7-1F-qU6">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4K-GU-qej" userLabel="View For L&amp;R" customClass="DesignableView" customModule="Saimon_experiment_01" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
@@ -327,7 +327,7 @@
                         <outlet property="errorLabel" destination="c0b-q9-Ctf" id="oX6-FA-6xR"/>
                         <outlet property="passwordTF" destination="CaT-0q-anV" id="EB0-hS-iam"/>
                         <outlet property="userNameTF" destination="pPi-1l-JBg" id="fiW-K8-g55"/>
-                        <segue destination="fha-ap-wiS" kind="show" identifier="goToGameFR" id="RdI-Fz-Oog"/>
+                        <segue destination="fha-ap-wiS" kind="show" identifier="goToGameFR" id="WSf-Zo-qdC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CmH-Qd-4bx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -387,6 +387,7 @@
                     </view>
                     <connections>
                         <segue destination="WIK-A1-4LG" kind="show" id="Yg8-V9-AUc"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToMain" id="FcW-iB-zna"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QpN-1r-cYm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -460,6 +461,7 @@
         <image name="saimonButton4" width="92" height="87"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qjw-hF-bON"/>
+        <segue reference="WSf-Zo-qdC"/>
+        <segue reference="FcW-iB-zna"/>
     </inferredMetricsTieBreakers>
 </document>
