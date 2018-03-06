@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginInController: UIViewController {
 
+    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    
+    @IBOutlet weak var errorLoginInText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,18 +24,19 @@ class LoginInController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func loginButtonPressed(_ sender: DesignableButton) {
+        
+        Auth.auth().signIn(withEmail: emailTF.text!, password: passwordTF.text!) { (user, error) in
+            if error != nil {
+                print(error!)
+            } else {
+                print("Login Succesful!")
+                
+                self.performSegue(withIdentifier: "goToGameFromLogin", sender: self)
+            }
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

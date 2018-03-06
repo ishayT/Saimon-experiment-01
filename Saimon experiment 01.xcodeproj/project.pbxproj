@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		58EB979DB10405F21FD2A49F /* Pods_Saimon_experiment_01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94C24410EDDA256F427785F /* Pods_Saimon_experiment_01.framework */; };
+		D789E9FC204DD34E00CF7C3A /* HighScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789E9FA204DD34E00CF7C3A /* HighScoreTableViewCell.swift */; };
+		D789E9FD204DD34E00CF7C3A /* XibScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D789E9FB204DD34E00CF7C3A /* XibScoreTableViewCell.xib */; };
 		D7C47694204AC8CA0077260A /* MarkerFelt.ttc in Resources */ = {isa = PBXBuildFile; fileRef = D7C47693204AC8C90077260A /* MarkerFelt.ttc */; };
 		D7C47696204AC9F10077260A /* Herculanum.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C47695204AC9F00077260A /* Herculanum.ttf */; };
 		D7C47698204AD5550077260A /* Chalkduster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C47697204AD5540077260A /* Chalkduster.ttf */; };
@@ -34,6 +36,8 @@
 		2D7F042519311507CC1B6AB8 /* Pods-Saimon experiment 01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saimon experiment 01.release.xcconfig"; path = "Pods/Target Support Files/Pods-Saimon experiment 01/Pods-Saimon experiment 01.release.xcconfig"; sourceTree = "<group>"; };
 		96B6B4540EBE31E81A0F82D4 /* Pods-Saimon experiment 01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saimon experiment 01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saimon experiment 01/Pods-Saimon experiment 01.debug.xcconfig"; sourceTree = "<group>"; };
 		B94C24410EDDA256F427785F /* Pods_Saimon_experiment_01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saimon_experiment_01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D789E9FA204DD34E00CF7C3A /* HighScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreTableViewCell.swift; sourceTree = "<group>"; };
+		D789E9FB204DD34E00CF7C3A /* XibScoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibScoreTableViewCell.xib; sourceTree = "<group>"; };
 		D7C47693204AC8C90077260A /* MarkerFelt.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarkerFelt.ttc; sourceTree = "<group>"; };
 		D7C47695204AC9F00077260A /* Herculanum.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Herculanum.ttf; sourceTree = "<group>"; };
 		D7C47697204AD5540077260A /* Chalkduster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chalkduster.ttf; sourceTree = "<group>"; };
@@ -78,6 +82,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D7382E7C204D8F3D0095CCDB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D7C47695204AC9F00077260A /* Herculanum.ttf */,
+				D7C47697204AD5540077260A /* Chalkduster.ttf */,
+				D7C47699204AD81D0077260A /* Luminari.ttf */,
+				D7C4769C204AD81F0077260A /* Savoye LET.ttc */,
+				D7C4769A204AD81D0077260A /* SnellRoundhand.ttc */,
+				D7C4769D204AD8200077260A /* Trattatello.ttf */,
+				D7C4769B204AD81E0077260A /* Zapfino.ttf */,
+				D7C47693204AC8C90077260A /* MarkerFelt.ttc */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D7E0BD482036F303000157DB = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +121,6 @@
 				D7E0BD6820372249000157DB /* Model */,
 				D7E0BD67203721F4000157DB /* View */,
 				D7E0BD66203721C7000157DB /* Controller */,
-				D7FAB2BC20487D3400B7C64F /* Design */,
 				D7E0BD6920372257000157DB /* Supporting Files */,
 				D7E0BD5B2036F304000157DB /* Assets.xcassets */,
 				D7E0BD602036F304000157DB /* Info.plist */,
@@ -129,6 +147,7 @@
 			children = (
 				D7E0BD5D2036F304000157DB /* LaunchScreen.storyboard */,
 				D7E0BD582036F304000157DB /* Main.storyboard */,
+				D7FAB2BC20487D3400B7C64F /* Design */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,16 +169,11 @@
 		D7FAB2BC20487D3400B7C64F /* Design */ = {
 			isa = PBXGroup;
 			children = (
-				D7C47695204AC9F00077260A /* Herculanum.ttf */,
-				D7C47697204AD5540077260A /* Chalkduster.ttf */,
-				D7C47699204AD81D0077260A /* Luminari.ttf */,
-				D7C4769C204AD81F0077260A /* Savoye LET.ttc */,
-				D7C4769A204AD81D0077260A /* SnellRoundhand.ttc */,
-				D7C4769D204AD8200077260A /* Trattatello.ttf */,
-				D7C4769B204AD81E0077260A /* Zapfino.ttf */,
-				D7C47693204AC8C90077260A /* MarkerFelt.ttc */,
 				D7FAB2BD20487DB400B7C64F /* DesignableView.swift */,
 				D7FAB2BF20487E6B00B7C64F /* DesignableButton.swift */,
+				D7382E7C204D8F3D0095CCDB /* Fonts */,
+				D789E9FA204DD34E00CF7C3A /* HighScoreTableViewCell.swift */,
+				D789E9FB204DD34E00CF7C3A /* XibScoreTableViewCell.xib */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -238,6 +252,7 @@
 				D7C47696204AC9F10077260A /* Herculanum.ttf in Resources */,
 				D7C4769E204AD8210077260A /* Luminari.ttf in Resources */,
 				D7C47698204AD5550077260A /* Chalkduster.ttf in Resources */,
+				D789E9FD204DD34E00CF7C3A /* XibScoreTableViewCell.xib in Resources */,
 				D7C476A2204AD8210077260A /* Trattatello.ttf in Resources */,
 				D7E0BD5F2036F304000157DB /* LaunchScreen.storyboard in Resources */,
 				D7C476A0204AD8210077260A /* Zapfino.ttf in Resources */,
@@ -329,6 +344,7 @@
 				D7FAB2BE20487DB400B7C64F /* DesignableView.swift in Sources */,
 				D7E0BD6B2037247A000157DB /* LoginInController.swift in Sources */,
 				D7E0BD552036F303000157DB /* AppDelegate.swift in Sources */,
+				D789E9FC204DD34E00CF7C3A /* HighScoreTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

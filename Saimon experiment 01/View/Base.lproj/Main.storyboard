@@ -95,7 +95,7 @@
                     <connections>
                         <segue destination="fPA-cB-J9M" kind="show" identifier="segueToRegister" id="4hy-VY-WfN"/>
                         <segue destination="5i6-cC-j8M" kind="show" identifier="segueToLogin" id="eDY-lO-F7d"/>
-                        <segue destination="fha-ap-wiS" kind="show" identifier="goToGame" id="qjw-hF-bON"/>
+                        <segue destination="fha-ap-wiS" kind="show" identifier="goToGameFromMain" id="qjw-hF-bON"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -111,7 +111,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saimonBackgroundL&amp;R" translatesAutoresizingMaskIntoConstraints="NO" id="LSK-mi-eyx">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AyA-jE-Ymg" customClass="DesignableView" customModule="Saimon_experiment_01" customModuleProvider="target">
                                 <rect key="frame" x="63" y="209" width="250" height="250"/>
@@ -167,6 +167,9 @@
                                                         <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="loginButtonPressed:" destination="5i6-cC-j8M" eventType="touchUpInside" id="00A-As-e6f"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -202,7 +205,10 @@
                         <viewLayoutGuide key="safeArea" id="6h0-Hi-Gse"/>
                     </view>
                     <connections>
-                        <segue destination="fha-ap-wiS" kind="show" id="bnY-Xi-lP2"/>
+                        <outlet property="emailTF" destination="T5J-1T-bTL" id="mhY-Wy-CUo"/>
+                        <outlet property="errorLoginInText" destination="gAV-xg-aoR" id="fXo-B3-FEO"/>
+                        <outlet property="passwordTF" destination="phy-Th-3bL" id="4IB-eX-Ois"/>
+                        <segue destination="fha-ap-wiS" kind="show" identifier="goToGameFromLogin" id="bnY-Xi-lP2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQ3-Oh-7Kq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -218,7 +224,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saimonBackgroundL&amp;R" translatesAutoresizingMaskIntoConstraints="NO" id="Ax7-1F-qU6">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4K-GU-qej" userLabel="View For L&amp;R" customClass="DesignableView" customModule="Saimon_experiment_01" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
@@ -327,7 +333,7 @@
                         <outlet property="errorLabel" destination="c0b-q9-Ctf" id="oX6-FA-6xR"/>
                         <outlet property="passwordTF" destination="CaT-0q-anV" id="EB0-hS-iam"/>
                         <outlet property="userNameTF" destination="pPi-1l-JBg" id="fiW-K8-g55"/>
-                        <segue destination="fha-ap-wiS" kind="show" identifier="goToGameFR" id="WSf-Zo-qdC"/>
+                        <segue destination="fha-ap-wiS" kind="show" identifier="goToGameFromRegister" id="WSf-Zo-qdC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CmH-Qd-4bx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -386,8 +392,7 @@
                         <viewLayoutGuide key="safeArea" id="Ac4-90-gil"/>
                     </view>
                     <connections>
-                        <segue destination="WIK-A1-4LG" kind="show" id="Yg8-V9-AUc"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToMain" id="FcW-iB-zna"/>
+                        <segue destination="WIK-A1-4LG" kind="show" identifier="goToHighScoreFromGame" id="Yg8-V9-AUc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QpN-1r-cYm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -402,16 +407,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-background-blur" translatesAutoresizingMaskIntoConstraints="NO" id="dss-nZ-P1j">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7fC-r4-ZLW">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cFZ-J6-AIO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="XibScoreTableViewCell" id="cFZ-J6-AIO">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cFZ-J6-AIO" id="Si6-Xo-fbK">
@@ -425,6 +426,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Cvo-xR-Gnl"/>
                     </view>
+                    <connections>
+                        <outlet property="leaderBoardTableView" destination="7fC-r4-ZLW" id="kU1-Ey-4D2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggI-sg-XZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -450,7 +454,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blue-background-blur" width="960" height="672"/>
         <image name="lockL&amp;R" width="256" height="256"/>
         <image name="saimon (1)" width="150" height="148"/>
         <image name="saimonBackground03" width="450" height="318"/>
@@ -462,6 +465,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WSf-Zo-qdC"/>
-        <segue reference="FcW-iB-zna"/>
     </inferredMetricsTieBreakers>
 </document>

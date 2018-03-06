@@ -39,7 +39,7 @@ class RegisterController: UIViewController {
             } else {
                 print("Registration Succesful!")
                 
-                self.performSegue(withIdentifier: "goToGameFR", sender: self)
+                self.performSegue(withIdentifier: "goToGameFromRegister", sender: self)
             }
         }
     }
@@ -47,7 +47,7 @@ class RegisterController: UIViewController {
     
     @IBAction func goTogame(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "goToGameFR", sender: self)
+        performSegue(withIdentifier: "goToGameFromRegister", sender: self)
     }
     
 
