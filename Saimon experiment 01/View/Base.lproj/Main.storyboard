@@ -24,70 +24,108 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saimonBackground03" translatesAutoresizingMaskIntoConstraints="NO" id="nlG-Fl-7Jc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saimonBackground03" translatesAutoresizingMaskIntoConstraints="NO" id="dG3-Xp-6Oc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLu-Ot-YOI" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
-                                <rect key="frame" x="46" y="497" width="85" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.6504976455479452" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="7"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="RegisterAndLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="01Q-uK-EXE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NK-sw-aco" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
-                                <rect key="frame" x="233" y="497" width="85" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.65084546232876717" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="7"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="RegisterAndLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kKW-Ty-x5O"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="saimon (1)" translatesAutoresizingMaskIntoConstraints="NO" id="rOQ-9E-2hx">
-                                <rect key="frame" x="94" y="233" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saimon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4d-aN-Drq">
-                                <rect key="frame" x="81" y="124" width="213" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Luminari-Regular" family="Luminari" pointSize="60"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XCS-Z9-pIx">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saimon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4d-aN-Drq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
+                                        <fontDescription key="fontDescription" name="Luminari-Regular" family="Luminari" pointSize="60"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.75323737160000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saimon (1)" translatesAutoresizingMaskIntoConstraints="NO" id="rOQ-9E-2hx">
+                                        <rect key="frame" x="0.0" y="201" width="375" height="201"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sdo-d0-oQd">
+                                        <rect key="frame" x="0.0" y="402" width="375" height="201"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YT1-KZ-WbZ">
+                                                <rect key="frame" x="0.0" y="52.5" width="187.5" height="96"/>
+                                                <subviews>
+                                                    <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLu-Ot-YOI" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
+                                                        <rect key="frame" x="38.5" y="3" width="111" height="90"/>
+                                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="lLu-Ot-YOI" secondAttribute="height" multiplier="37:30" id="Hhd-ED-EI3"/>
+                                                            <constraint firstAttribute="width" constant="111" id="thN-JL-1da"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="  Register  ">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="RegisterAndLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="01Q-uK-EXE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="lLu-Ot-YOI" firstAttribute="centerX" secondItem="YT1-KZ-WbZ" secondAttribute="centerX" id="dBF-4t-2QJ"/>
+                                                    <constraint firstItem="lLu-Ot-YOI" firstAttribute="centerY" secondItem="YT1-KZ-WbZ" secondAttribute="centerY" id="mxv-dg-eXy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9X-WK-uv6">
+                                                <rect key="frame" x="187.5" y="52.5" width="187.5" height="96"/>
+                                                <subviews>
+                                                    <button opaque="NO" alpha="0.69999999999999996" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NK-sw-aco" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
+                                                        <rect key="frame" x="38.5" y="3" width="111" height="90"/>
+                                                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="111" id="DzL-Zx-46B"/>
+                                                            <constraint firstAttribute="width" secondItem="9NK-sw-aco" secondAttribute="height" multiplier="37:30" id="Pcn-AZ-9qF"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="Login">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="7"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="RegisterAndLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kKW-Ty-x5O"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="9NK-sw-aco" firstAttribute="centerY" secondItem="y9X-WK-uv6" secondAttribute="centerY" id="0gD-iv-n5t"/>
+                                                    <constraint firstItem="9NK-sw-aco" firstAttribute="centerX" secondItem="y9X-WK-uv6" secondAttribute="centerX" id="Knm-fI-lRZ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="nlG-Fl-7Jc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UX4-eB-LFZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nlG-Fl-7Jc" secondAttribute="trailing" id="as1-Dz-naf"/>
-                            <constraint firstAttribute="bottom" secondItem="nlG-Fl-7Jc" secondAttribute="bottom" id="nV8-2d-ajG"/>
-                            <constraint firstItem="nlG-Fl-7Jc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xeG-Gg-QRb"/>
+                            <constraint firstAttribute="trailing" secondItem="dG3-Xp-6Oc" secondAttribute="trailing" id="CVI-ZD-LDk"/>
+                            <constraint firstAttribute="bottom" secondItem="XCS-Z9-pIx" secondAttribute="bottom" id="LUC-MO-tqU"/>
+                            <constraint firstAttribute="bottom" secondItem="dG3-Xp-6Oc" secondAttribute="bottom" id="U2L-7Q-Dvc"/>
+                            <constraint firstItem="dG3-Xp-6Oc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fVV-Ky-vCQ"/>
+                            <constraint firstItem="XCS-Z9-pIx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hvA-yS-ido"/>
+                            <constraint firstItem="dG3-Xp-6Oc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ijd-qc-Vmy"/>
+                            <constraint firstItem="XCS-Z9-pIx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="na0-UV-iin"/>
+                            <constraint firstAttribute="trailing" secondItem="XCS-Z9-pIx" secondAttribute="trailing" id="vz3-ew-SYz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -114,7 +152,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AyA-jE-Ymg" customClass="DesignableView" customModule="Saimon_experiment_01" customModuleProvider="target">
-                                <rect key="frame" x="63" y="209" width="250" height="250"/>
+                                <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQD-b0-bAm" customClass="DesignableView" customModule="Saimon_experiment_01" customModuleProvider="target">
                                         <rect key="frame" x="100" y="-26" width="50" height="50"/>
@@ -407,9 +445,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7fC-r4-ZLW">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7fC-r4-ZLW">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="XibScoreTableViewCell" id="cFZ-J6-AIO">
@@ -424,6 +461,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7fC-r4-ZLW" firstAttribute="top" secondItem="Cvo-xR-Gnl" secondAttribute="top" id="ake-4H-E0J"/>
+                            <constraint firstAttribute="trailing" secondItem="7fC-r4-ZLW" secondAttribute="trailing" id="cTm-Gi-9a2"/>
+                            <constraint firstAttribute="bottom" secondItem="7fC-r4-ZLW" secondAttribute="bottom" id="xcZ-Yt-Uln"/>
+                            <constraint firstItem="7fC-r4-ZLW" firstAttribute="leading" secondItem="hW9-ZT-BSC" secondAttribute="leading" id="yHt-zy-zaD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Cvo-xR-Gnl"/>
                     </view>
                     <connections>
@@ -464,6 +507,6 @@
         <image name="saimonButton4" width="92" height="87"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WSf-Zo-qdC"/>
+        <segue reference="qjw-hF-bON"/>
     </inferredMetricsTieBreakers>
 </document>
