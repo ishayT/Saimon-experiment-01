@@ -10,12 +10,22 @@ import UIKit
 
 class WelcomeScreenController: UIViewController {
 
+    @IBOutlet weak var saimonLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        saimonLabel.alpha = 0
         self.title = "welcome"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 3) {
+            self.saimonLabel.alpha = 0.6
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
