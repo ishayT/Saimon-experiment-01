@@ -39,18 +39,18 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saimon (1)" translatesAutoresizingMaskIntoConstraints="NO" id="rOQ-9E-2hx">
                                         <rect key="frame" x="0.0" y="201" width="375" height="201"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sdo-d0-oQd">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-ps-1ge">
                                         <rect key="frame" x="0.0" y="402" width="375" height="201"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YT1-KZ-WbZ">
-                                                <rect key="frame" x="0.0" y="52.5" width="187.5" height="96"/>
+                                                <rect key="frame" x="187" y="0.0" width="187.5" height="201"/>
                                                 <subviews>
                                                     <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLu-Ot-YOI" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
-                                                        <rect key="frame" x="38.5" y="3" width="111" height="90"/>
+                                                        <rect key="frame" x="39" y="46" width="110" height="110"/>
                                                         <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" secondItem="lLu-Ot-YOI" secondAttribute="height" multiplier="37:30" id="Hhd-ED-EI3"/>
-                                                            <constraint firstAttribute="width" constant="111" id="thN-JL-1da"/>
+                                                            <constraint firstAttribute="width" secondItem="lLu-Ot-YOI" secondAttribute="height" multiplier="1:1" id="fiN-5n-hgW"/>
+                                                            <constraint firstAttribute="width" constant="110" id="gVA-0K-6zN"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="  Register  ">
@@ -73,19 +73,19 @@
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="lLu-Ot-YOI" firstAttribute="centerX" secondItem="YT1-KZ-WbZ" secondAttribute="centerX" id="dBF-4t-2QJ"/>
-                                                    <constraint firstItem="lLu-Ot-YOI" firstAttribute="centerY" secondItem="YT1-KZ-WbZ" secondAttribute="centerY" id="mxv-dg-eXy"/>
+                                                    <constraint firstItem="lLu-Ot-YOI" firstAttribute="centerY" secondItem="YT1-KZ-WbZ" secondAttribute="centerY" id="9x5-Uf-4U5"/>
+                                                    <constraint firstItem="lLu-Ot-YOI" firstAttribute="centerX" secondItem="YT1-KZ-WbZ" secondAttribute="centerX" id="BWQ-GP-1sK"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9X-WK-uv6">
-                                                <rect key="frame" x="187.5" y="52.5" width="187.5" height="96"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="201"/>
                                                 <subviews>
                                                     <button opaque="NO" alpha="0.69999999999999996" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NK-sw-aco" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
-                                                        <rect key="frame" x="38.5" y="3" width="111" height="90"/>
+                                                        <rect key="frame" x="38" y="46" width="110" height="110"/>
                                                         <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="111" id="DzL-Zx-46B"/>
-                                                            <constraint firstAttribute="width" secondItem="9NK-sw-aco" secondAttribute="height" multiplier="37:30" id="Pcn-AZ-9qF"/>
+                                                            <constraint firstAttribute="width" secondItem="9NK-sw-aco" secondAttribute="height" multiplier="1:1" id="Jkv-Z3-9fb"/>
+                                                            <constraint firstAttribute="width" constant="110" id="N6M-uO-olP"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Login">
@@ -108,12 +108,25 @@
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="9NK-sw-aco" firstAttribute="centerY" secondItem="y9X-WK-uv6" secondAttribute="centerY" id="0gD-iv-n5t"/>
-                                                    <constraint firstItem="9NK-sw-aco" firstAttribute="centerX" secondItem="y9X-WK-uv6" secondAttribute="centerX" id="Knm-fI-lRZ"/>
+                                                    <constraint firstItem="9NK-sw-aco" firstAttribute="centerX" secondItem="y9X-WK-uv6" secondAttribute="centerX" id="hOt-OV-5Vh"/>
+                                                    <constraint firstItem="9NK-sw-aco" firstAttribute="centerY" secondItem="y9X-WK-uv6" secondAttribute="centerY" id="oCz-zl-iGD"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                    </stackView>
+                                        <constraints>
+                                            <constraint firstItem="lLu-Ot-YOI" firstAttribute="width" secondItem="9NK-sw-aco" secondAttribute="width" id="509-a5-aaa"/>
+                                            <constraint firstAttribute="bottom" secondItem="YT1-KZ-WbZ" secondAttribute="bottom" id="DzP-7u-JE1"/>
+                                            <constraint firstItem="lLu-Ot-YOI" firstAttribute="width" secondItem="9NK-sw-aco" secondAttribute="height" multiplier="1:1" id="GTq-Nu-4qR"/>
+                                            <constraint firstItem="y9X-WK-uv6" firstAttribute="width" secondItem="YT1-KZ-WbZ" secondAttribute="height" multiplier="187:201" id="IGn-lj-yLP"/>
+                                            <constraint firstItem="y9X-WK-uv6" firstAttribute="width" secondItem="YT1-KZ-WbZ" secondAttribute="width" id="QBs-B7-1Rb"/>
+                                            <constraint firstItem="YT1-KZ-WbZ" firstAttribute="width" secondItem="y9X-WK-uv6" secondAttribute="height" multiplier="187:201" id="WEM-pK-zLV"/>
+                                            <constraint firstItem="y9X-WK-uv6" firstAttribute="leading" secondItem="mAd-ps-1ge" secondAttribute="leading" id="Yhr-7m-6bu"/>
+                                            <constraint firstItem="YT1-KZ-WbZ" firstAttribute="top" secondItem="mAd-ps-1ge" secondAttribute="top" id="fx0-GN-85T"/>
+                                            <constraint firstItem="y9X-WK-uv6" firstAttribute="top" secondItem="mAd-ps-1ge" secondAttribute="top" id="hU3-Y0-oXS"/>
+                                            <constraint firstAttribute="bottom" secondItem="y9X-WK-uv6" secondAttribute="bottom" id="vCF-bm-Fns"/>
+                                            <constraint firstAttribute="trailing" secondItem="YT1-KZ-WbZ" secondAttribute="trailing" id="xUD-F5-0jj"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -449,7 +462,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="XibScoreTableViewCell" id="cFZ-J6-AIO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="XibScoreTableViewCell" id="cFZ-J6-AIO">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cFZ-J6-AIO" id="Si6-Xo-fbK">
