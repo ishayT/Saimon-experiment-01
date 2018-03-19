@@ -11,7 +11,8 @@ import Firebase
 
 class SimonGameController: UIViewController {
 
- 
+    //MARK:- Varibles
+    var arrayOfButtons : [UIButton] = []
     
     
     override func viewDidLoad() {
