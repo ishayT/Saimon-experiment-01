@@ -11,11 +11,16 @@ import Firebase
 
 class SimonGameController: UIViewController {
 
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: DesignableButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = "saimon"
-        
+        button1.layer.cornerRadius = 0.5 * button1.bounds.size.width
+        button2.layer.cornerRadius = 0.5 * button2.bounds.size.width
         
     }
     
