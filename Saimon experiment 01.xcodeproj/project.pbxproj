@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		58EB979DB10405F21FD2A49F /* Pods_Saimon_experiment_01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94C24410EDDA256F427785F /* Pods_Saimon_experiment_01.framework */; };
+		D76C46D82062B86B000C55CB /* buttonSound1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D76C46D42062B869000C55CB /* buttonSound1.wav */; };
+		D76C46D92062B86B000C55CB /* buttonSound4.wav in Resources */ = {isa = PBXBuildFile; fileRef = D76C46D52062B86A000C55CB /* buttonSound4.wav */; };
+		D76C46DA2062B86B000C55CB /* buttonSound3.wav in Resources */ = {isa = PBXBuildFile; fileRef = D76C46D62062B86A000C55CB /* buttonSound3.wav */; };
+		D76C46DB2062B86B000C55CB /* buttonSound2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D76C46D72062B86B000C55CB /* buttonSound2.wav */; };
 		D789E9FC204DD34E00CF7C3A /* HighScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789E9FA204DD34E00CF7C3A /* HighScoreTableViewCell.swift */; };
 		D789E9FD204DD34E00CF7C3A /* XibScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D789E9FB204DD34E00CF7C3A /* XibScoreTableViewCell.xib */; };
 		D7C47694204AC8CA0077260A /* MarkerFelt.ttc in Resources */ = {isa = PBXBuildFile; fileRef = D7C47693204AC8C90077260A /* MarkerFelt.ttc */; };
@@ -36,6 +40,10 @@
 		2D7F042519311507CC1B6AB8 /* Pods-Saimon experiment 01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saimon experiment 01.release.xcconfig"; path = "Pods/Target Support Files/Pods-Saimon experiment 01/Pods-Saimon experiment 01.release.xcconfig"; sourceTree = "<group>"; };
 		96B6B4540EBE31E81A0F82D4 /* Pods-Saimon experiment 01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saimon experiment 01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saimon experiment 01/Pods-Saimon experiment 01.debug.xcconfig"; sourceTree = "<group>"; };
 		B94C24410EDDA256F427785F /* Pods_Saimon_experiment_01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saimon_experiment_01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76C46D42062B869000C55CB /* buttonSound1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buttonSound1.wav; sourceTree = "<group>"; };
+		D76C46D52062B86A000C55CB /* buttonSound4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buttonSound4.wav; sourceTree = "<group>"; };
+		D76C46D62062B86A000C55CB /* buttonSound3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buttonSound3.wav; sourceTree = "<group>"; };
+		D76C46D72062B86B000C55CB /* buttonSound2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buttonSound2.wav; sourceTree = "<group>"; };
 		D789E9FA204DD34E00CF7C3A /* HighScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreTableViewCell.swift; sourceTree = "<group>"; };
 		D789E9FB204DD34E00CF7C3A /* XibScoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibScoreTableViewCell.xib; sourceTree = "<group>"; };
 		D7C47693204AC8C90077260A /* MarkerFelt.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = MarkerFelt.ttc; sourceTree = "<group>"; };
@@ -97,6 +105,17 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		D76C46DC2062B878000C55CB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D76C46D42062B869000C55CB /* buttonSound1.wav */,
+				D76C46D72062B86B000C55CB /* buttonSound2.wav */,
+				D76C46D62062B86A000C55CB /* buttonSound3.wav */,
+				D76C46D52062B86A000C55CB /* buttonSound4.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		D7E0BD482036F303000157DB = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +166,7 @@
 			children = (
 				D7E0BD5D2036F304000157DB /* LaunchScreen.storyboard */,
 				D7E0BD582036F304000157DB /* Main.storyboard */,
+				D76C46DC2062B878000C55CB /* Sounds */,
 				D7FAB2BC20487D3400B7C64F /* Design */,
 			);
 			path = View;
@@ -253,11 +273,15 @@
 				D7C4769E204AD8210077260A /* Luminari.ttf in Resources */,
 				D7C47698204AD5550077260A /* Chalkduster.ttf in Resources */,
 				D789E9FD204DD34E00CF7C3A /* XibScoreTableViewCell.xib in Resources */,
+				D76C46DA2062B86B000C55CB /* buttonSound3.wav in Resources */,
 				D7C476A2204AD8210077260A /* Trattatello.ttf in Resources */,
+				D76C46DB2062B86B000C55CB /* buttonSound2.wav in Resources */,
 				D7E0BD5F2036F304000157DB /* LaunchScreen.storyboard in Resources */,
 				D7C476A0204AD8210077260A /* Zapfino.ttf in Resources */,
 				D7FAB2BB20480D9900B7C64F /* GoogleService-Info.plist in Resources */,
+				D76C46D82062B86B000C55CB /* buttonSound1.wav in Resources */,
 				D7E0BD5C2036F304000157DB /* Assets.xcassets in Resources */,
+				D76C46D92062B86B000C55CB /* buttonSound4.wav in Resources */,
 				D7C47694204AC8CA0077260A /* MarkerFelt.ttc in Resources */,
 				D7C4769F204AD8210077260A /* SnellRoundhand.ttc in Resources */,
 				D7E0BD5A2036F304000157DB /* Main.storyboard in Resources */,
