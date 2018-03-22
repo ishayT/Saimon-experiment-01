@@ -670,9 +670,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundGame4" translatesAutoresizingMaskIntoConstraints="NO" id="38C-mh-V6x">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7fC-r4-ZLW">
                                 <rect key="frame" x="0.0" y="64" width="320" height="416"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="XibScoreTableViewCell" rowHeight="60" id="cFZ-J6-AIO">
                                         <rect key="frame" x="0.0" y="28" width="320" height="60"/>
@@ -680,15 +683,21 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cFZ-J6-AIO" id="Si6-Xo-fbK">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="38C-mh-V6x" secondAttribute="bottom" id="Vc7-xE-TS1"/>
+                            <constraint firstItem="38C-mh-V6x" firstAttribute="leading" secondItem="hW9-ZT-BSC" secondAttribute="leading" id="XyI-Zx-v9i"/>
                             <constraint firstItem="7fC-r4-ZLW" firstAttribute="top" secondItem="Cvo-xR-Gnl" secondAttribute="top" id="ake-4H-E0J"/>
                             <constraint firstAttribute="trailing" secondItem="7fC-r4-ZLW" secondAttribute="trailing" id="cTm-Gi-9a2"/>
+                            <constraint firstAttribute="trailing" secondItem="38C-mh-V6x" secondAttribute="trailing" id="iQF-Xe-tr1"/>
+                            <constraint firstItem="38C-mh-V6x" firstAttribute="top" secondItem="hW9-ZT-BSC" secondAttribute="top" id="ppa-Zz-Q8e"/>
                             <constraint firstAttribute="bottom" secondItem="7fC-r4-ZLW" secondAttribute="bottom" id="xcZ-Yt-Uln"/>
                             <constraint firstItem="7fC-r4-ZLW" firstAttribute="leading" secondItem="hW9-ZT-BSC" secondAttribute="leading" id="yHt-zy-zaD"/>
                         </constraints>
@@ -700,7 +709,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggI-sg-XZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3600.8000000000002" y="23.838080959520241"/>
+            <point key="canvasLocation" x="3600" y="23.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zKW-hv-PuI">
@@ -722,6 +731,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backgroundGame4" width="112" height="112"/>
         <image name="backgroundGameS3" width="150" height="150"/>
         <image name="lockL&amp;R" width="256" height="256"/>
         <image name="saimon (1)" width="150" height="148"/>

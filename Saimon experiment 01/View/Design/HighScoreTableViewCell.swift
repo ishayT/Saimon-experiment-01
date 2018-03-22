@@ -9,11 +9,10 @@
 import UIKit
 
 class HighScoreTableViewCell: UITableViewCell {
-    @IBOutlet weak var viewForCustomCell: UIView!
     
-    @IBOutlet weak var playerName: UILabel!
     @IBOutlet weak var placeInHighScore: UILabel!
     @IBOutlet weak var playerImage: UIImageView!
+    @IBOutlet weak var playerName: UILabel!
     @IBOutlet weak var playerScoreLabel: UILabel!
     
     override func awakeFromNib() {

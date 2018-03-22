@@ -34,7 +34,7 @@ class HighScoreController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 3
+        return 18
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -42,7 +42,7 @@ class HighScoreController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = tableView.dequeueReusableCell(withIdentifier: "customHighScoreCell", for: indexPath) as! HighScoreTableViewCell
         print("$$$$$$$$$$$$ The problem Finish here $$$$$$$$$$$")
         
-        let playersArray = ["FirstPlayer", "SecondPlayer", "ThirdPlayer"]
+        let playersArray = ["FirstPlayer", "SecondPlayer", "ThirdPlayer","FirstPlayer", "SecondPlayer", "ThirdPlayer","FirstPlayer", "SecondPlayer", "ThirdPlayer","FirstPlayer", "SecondPlayer", "ThirdPlayer","FirstPlayer", "SecondPlayer", "ThirdPlayer","FirstPlayer", "SecondPlayer", "ThirdPlayer"]
         print("$$$$$$$$$$$$ stil works 7 $$$$$$$$$$$")
         
         cell.playerName.text = playersArray[indexPath.row]
