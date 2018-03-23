@@ -21,8 +21,6 @@ class HighScoreController: UIViewController, UITableViewDelegate, UITableViewDat
         
         
         // Registering the nib file
-        print("$$$$$$$$$$$$ The problem starts here $$$$$$$$$$$")
-        
         leaderBoardTableView.register(UINib(nibName: "XibScoreTableViewCell", bundle: nil), forCellReuseIdentifier: "customHighScoreCell")
         
     }
@@ -38,16 +36,17 @@ class HighScoreController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("$$$$$$$$$$$$ here the problem is happening $$$$$$$$$$$")
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "customHighScoreCell", for: indexPath) as! HighScoreTableViewCell
-        print("$$$$$$$$$$$$ The problem Finish here $$$$$$$$$$$")
+        
         
         let playersArray = ["FirstPlayer", "SecondPlayer", "ThirdPlayer","FirstPlayer", "SecondPlayer", "ThirdPlayer","FirstPlayer", "SecondPlayer", "ThirdPlayer","FirstPlayer", "SecondPlayer", "ThirdPlayer","FirstPlayer", "SecondPlayer", "ThirdPlayer","FirstPlayer", "SecondPlayer", "ThirdPlayer"]
-        print("$$$$$$$$$$$$ stil works 7 $$$$$$$$$$$")
+        
         
         cell.playerName.text = playersArray[indexPath.row]
         
-        print("$$$$$$$$$$$$ stil works 8 $$$$$$$$$$$")
+        //TODO: watch lecture 189 minute 16 and add the score label and place in the high score
+        
         return cell
     }
 }
