@@ -12,6 +12,8 @@ class HighScoreController: UIViewController, UITableViewDelegate, UITableViewDat
 
     @IBOutlet weak var leaderBoardTableView: UITableView!
     
+    var playersArray : [NewPlayer] = [NewPlayer]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

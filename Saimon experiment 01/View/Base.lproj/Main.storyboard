@@ -249,7 +249,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTF" destination="T5J-1T-bTL" id="mhY-Wy-CUo"/>
-                        <outlet property="errorLoginInText" destination="gAV-xg-aoR" id="fXo-B3-FEO"/>
+                        <outlet property="loginError" destination="gAV-xg-aoR" id="C3d-o3-mL6"/>
                         <outlet property="passwordTF" destination="phy-Th-3bL" id="4IB-eX-Ois"/>
                         <segue destination="fha-ap-wiS" kind="show" identifier="goToGameFromLogin" id="bnY-Xi-lP2"/>
                     </connections>
@@ -302,7 +302,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPi-1l-JBg">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a Nickname" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPi-1l-JBg">
                                                 <rect key="frame" x="0.0" y="88" width="190" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -374,8 +374,9 @@
                     <connections>
                         <outlet property="emailTF" destination="MaB-K8-rAN" id="hqQ-Uh-akA"/>
                         <outlet property="errorLabel" destination="c0b-q9-Ctf" id="oX6-FA-6xR"/>
+                        <outlet property="nickNameTF" destination="pPi-1l-JBg" id="1Yb-Ya-PeC"/>
                         <outlet property="passwordTF" destination="CaT-0q-anV" id="EB0-hS-iam"/>
-                        <outlet property="userNameTF" destination="pPi-1l-JBg" id="fiW-K8-g55"/>
+                        <outlet property="registerBtn" destination="5eA-Jw-7Mx" id="kwf-xi-GQ8"/>
                         <segue destination="fha-ap-wiS" kind="show" identifier="goToGameFromRegister" id="WSf-Zo-qdC"/>
                     </connections>
                 </viewController>
@@ -520,7 +521,7 @@
                                                     <constraint firstAttribute="width" constant="100" id="5lv-43-ayr"/>
                                                     <constraint firstAttribute="height" constant="100" id="6XE-QH-vMy"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="23"/>
                                                 <state key="normal" title="start">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -730,6 +731,6 @@
         <image name="saimonBackgroundL&amp;R" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qjw-hF-bON"/>
+        <segue reference="bnY-Xi-lP2"/>
     </inferredMetricsTieBreakers>
 </document>

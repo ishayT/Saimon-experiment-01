@@ -45,7 +45,12 @@ class SimonGameController: UIViewController {
     var arrayOfButtons : [UIButton] = []
     
     
-    //MARK:- 5. ViewDidLoad
+    //MARK:- 5. Firebase Methods
+    var playersDatabase = Database.database().reference()
+    let uid : String = (Auth.auth().currentUser!.uid)
+    
+    
+    //MARK:- 6. ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -60,7 +65,7 @@ class SimonGameController: UIViewController {
         changeThePlayButtons(isEnabledStatus: false, arrayOfButtons: arrayOfButtons)
     }
     
-    //MARK:- 6.creating the navigation bar buttons
+    //MARK:- 7.creating the navigation bar buttons
     override func viewWillAppear(_ animated: Bool) {
         navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "Logout", style: .plain, target: self, action: #selector(logout))
         
@@ -72,7 +77,7 @@ class SimonGameController: UIViewController {
     }
     
 
-    //MARK:- 7.changeThePlayButtons(isEnabledStatus) makes the 4 game buttons enable/disable
+    //MARK:- 8.changeThePlayButtons(isEnabledStatus) makes the 4 game buttons enable/disable
     func changeThePlayButtons(isEnabledStatus: Bool, arrayOfButtons: [UIButton]){
         for i in 0...arrayOfButtons.count - 1 {
             arrayOfButtons[i].isEnabled = isEnabledStatus
@@ -80,7 +85,7 @@ class SimonGameController: UIViewController {
     }
     
     
-    //MARK:- 8.start button pressed
+    //MARK:- 9.start button pressed
     @IBAction func startButtonPressed(_ sender: DesignableButton) {
         startButton.isEnabled = false
         loadNewGame()
@@ -91,9 +96,9 @@ class SimonGameController: UIViewController {
         
         arrayOfBtnNumbersPlayedByTheComp.removeAll()
         scoreNumber = 0
-        numberOfRounds = 0
         numberOfLives = 3
         gameIsOver = false
+        self.startButton.setTitle("Start", for: .normal)
         
         randomNumber = Int(arc4random_uniform(4)+1)
         arrayOfBtnNumbersPlayedByTheComp.append(self.randomNumber)
@@ -102,15 +107,17 @@ class SimonGameController: UIViewController {
     }
     
     
-    //MARK:- 9.update UI ------> need to check if i should add a text for round number and good bad ansowers on the start button
+    //MARK:- 10.update UI ------> need to check if i should add a text for round number and good bad ansowers on the start button
     func updateUI(){
         scoreLabel.text = "score = \(scoreNumber)"
         livesLabel.text = "Lives = \(numberOfLives)"
     }
     
     
-    //MARK:- 10.start a new round of buttons played by the computer
+    //MARK:- 11.start a new round of buttons played by the computer
     func startNewRound() {
+        numberOfRounds += 1
+        startButton.setTitle("\(numberOfRounds)", for: .normal)
         changeThePlayButtons(isEnabledStatus: false, arrayOfButtons: arrayOfButtons)
         
         arrayOfBtnNumbersPlayedByThePlayer.removeAll()
@@ -121,7 +128,7 @@ class SimonGameController: UIViewController {
         makeComputerButtonFlash(buttons: arrayOfButtons)
     }
     
-    //MARK:- 11.The function that calls for the sound and animation for each button played by the computer i needed to call         this function with another @objc function(usingButtonsArray) cos the selector of the Timer couldent get varibles such as [UIButton] when calling the makeComputerButtonFlash directly
+    //MARK:- 12.The function that calls for the sound and animation for each button played by the computer i needed to call         this function with another @objc function(usingButtonsArray) cos the selector of the Timer couldent get varibles such as [UIButton] when calling the makeComputerButtonFlash directly
     func makeComputerButtonFlash(buttons: [UIButton]) {
         selectedSound = arrayOfSounds[arrayOfBtnNumbersPlayedByTheComp[counterForTheComputerTurn] - 1]
         
@@ -145,7 +152,7 @@ class SimonGameController: UIViewController {
     }
     
     
-    //MARK:- 12. player turn
+    //MARK:- 13. player turn
     @IBAction func gameButtonsPressedByTheUser(_ sender: DesignableButton) {
         selectedSound = arrayOfSounds[sender.tag - 1]
         arrayOfBtnNumbersPlayedByThePlayer.append(sender.tag)
@@ -162,11 +169,13 @@ class SimonGameController: UIViewController {
             
             if arrayOfBtnNumbersPlayedByThePlayer[index] == arrayOfBtnNumbersPlayedByTheComp[index] {
                 print("you are right")
+                self.startButton.setTitle("Good!", for: .normal)
                 scoreNumber = scoreNumber + 5 + 2 * numberOfRounds
                 updateUI()
                 print(scoreNumber)
             } else {
                 print("you are wrong")
+                self.startButton.setTitle("Bad¡", for: .normal)
                 numberOfLives -= 1
                 scoreNumber = scoreNumber - 5
                 updateUI()
@@ -190,9 +199,12 @@ class SimonGameController: UIViewController {
     }
     
     
-    //MARK:- 13.Game Over Method
+    //MARK:- 14.Game Over Method
     func gameOver() {
         print("GAME OVER!!")
+        numberOfRounds = 0
+        
+        checkForHighScore()
         
         let gameOverAlert = UIAlertController(title: "GAME OVER", message: "Your Score Is: \(scoreNumber)", preferredStyle: .alert)
         
@@ -200,17 +212,35 @@ class SimonGameController: UIViewController {
             self.loadNewGame()
         }
         
-        let seeHighScore = UIAlertAction(title: "High Score", style: .default) { (seeHighScore) in
+        let goToHighScore = UIAlertAction(title: "High Score", style: .default) { (seeHighScore) in
             print("go to high Score")
             self.goingToTheHighScore()
         }
         gameOverAlert.addAction(startOver)
-        gameOverAlert.addAction(seeHighScore)
+        gameOverAlert.addAction(goToHighScore)
         present(gameOverAlert, animated: true, completion: nil)
     }
     
     
-    //MARK:- 14.playSound method - play the selected sound from the sound array
+    //MARK:- 15. the method that takes the high score of the user from the firebase database and check if the score is bigger then it if it is the score value reaplace the high score value in the db
+    func checkForHighScore() {
+        var highS = playersDatabase.child("users/\(uid)/highscore").observe(.value) { (snapshot) in
+            
+            //TODO: find why it's not working with a Int
+            let hidhSC = snapshot.value as? String?
+            
+            print(hidhSC)
+        }
+        
+//        var highScore = Int(highS)
+//        
+//        if highScore < scoreNumber {
+//            highScore = scoreNumber
+//            playersDatabase.child("users/\(uid)/highscore").updateChildValues(["highscore" : "\(highScore)"])
+//        }
+    }
+    
+    //MARK:- 16.playSound method - play the selected sound from the sound array
     func playSound(){
         let soundURL = Bundle.main.url(forResource: selectedSound, withExtension: "wav")
         do {
@@ -222,9 +252,7 @@ class SimonGameController: UIViewController {
     }
     
     
-    
-    
-    //MARK:- 15. logout method
+    //MARK:- 17. logout method
     @objc func logout(){
         do {
             try Auth.auth().signOut()

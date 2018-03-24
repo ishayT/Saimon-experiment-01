@@ -31,6 +31,7 @@ import UIKit
     func makeButtonRound() {
         self.layer.cornerRadius = 0.5 * self.bounds.size.width
     }
+    
 }
 
 //MARK:- extension so the buttons of the game will have  the flashing ability
