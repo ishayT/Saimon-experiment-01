@@ -47,6 +47,10 @@ class LoginInController: UIViewController {
                         self.loginError.text = "please enter an email"
                         self.loginError.alpha = 1
                         self.loginError.shake()
+                    case .userNotFound:
+                        self.loginError.text = "no such email"
+                        self.loginError.alpha = 1
+                        self.loginError.shake()
                     case .wrongPassword:
                         self.loginError.text = "wrong password"
                         self.loginError.alpha = 1
