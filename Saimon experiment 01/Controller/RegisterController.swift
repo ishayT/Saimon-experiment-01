@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 class RegisterController: UIViewController {
 
@@ -33,20 +34,23 @@ class RegisterController: UIViewController {
     //press to set up a user on Firebase
     @IBAction func registerBTNPressed(_ sender: DesignableButton) {
         
-        registerBtn.isEnabled = false
+        SVProgressHUD.show()
+        SVProgressHUD.setDefaultMaskType(.gradient)
         
         let nickName : String = nickNameTF.text!
         if nickName.count == 0 {
             errorLabel.text = "please enter a Nickname"
             errorLabel.alpha = 1
             self.errorLabel.shake()
-            self.registerBtn.isEnabled = true
+            
+            SVProgressHUD.dismiss()
             return
         }
         Auth.auth().createUser(withEmail: emailTF.text!, password: passwordTF.text!) { (user, error) in
             
             if error != nil {
                 
+                SVProgressHUD.dismiss()
                 if let errorCode = AuthErrorCode(rawValue: error!._code) {
                     
                     switch errorCode {
@@ -72,6 +76,8 @@ class RegisterController: UIViewController {
                 }
             } else {
                 print("Registration Succesful!")
+                SVProgressHUD.dismiss()
+                
                 let uid : String = (user?.uid)!
                 let highScore : Int = -1
                 
@@ -80,7 +86,7 @@ class RegisterController: UIViewController {
                 
                 self.performSegue(withIdentifier: "goToGameFromRegister", sender: self)
             }
-            self.registerBtn.isEnabled = true
+            
         }
     }
     

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 class LoginInController: UIViewController {
 
@@ -29,9 +30,13 @@ class LoginInController: UIViewController {
 
     @IBAction func loginButtonPressed(_ sender: DesignableButton) {
         
+        SVProgressHUD.show()
+        SVProgressHUD.setDefaultMaskType(.gradient)
+        
         Auth.auth().signIn(withEmail: emailTF.text!, password: passwordTF.text!) { (user, error) in
             if error != nil {
                 
+                SVProgressHUD.dismiss()
                 if let errorCode = AuthErrorCode(rawValue: error!._code) {
                     switch errorCode {
                     case .invalidEmail:
@@ -52,6 +57,7 @@ class LoginInController: UIViewController {
                 }
             } else {
                 print("Login Succesful!")
+                SVProgressHUD.dismiss()
                 
                 self.performSegue(withIdentifier: "goToGameFromLogin", sender: self)
             }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class WelcomeScreenController: UIViewController {
 
@@ -16,13 +17,17 @@ class WelcomeScreenController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let user = Auth.auth().currentUser
+        if user != nil {
+            performSegue(withIdentifier: "goToGameFromMain", sender: self)
+        }
         
         saimonLabel.alpha = 0
         self.title = "welcome"
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 3) {
+        UIView.animate(withDuration: 2.3) {
             self.saimonLabel.alpha = 0.6
         }
 

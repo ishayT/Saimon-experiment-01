@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import Firebase
+import SVProgressHUD
 
 class HighScoreController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     let playersDatabase = Database.database().reference()
@@ -58,6 +59,9 @@ class HighScoreController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func loadUseres(){
+        SVProgressHUD.show()
+        SVProgressHUD.setDefaultMaskType(.gradient)
+        
         playersDatabase.child("users").observe(.value) { (snapshot) in
             let users = snapshot.value as! NSDictionary
             self.playersArray.removeAll()
@@ -79,6 +83,7 @@ class HighScoreController: UIViewController, UITableViewDelegate, UITableViewDat
                 return p1.highScore > p2.highScore
             })
             self.refresh()
+            SVProgressHUD.dismiss()
         }
     }
 }
