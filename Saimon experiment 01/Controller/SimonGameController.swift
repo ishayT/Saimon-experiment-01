@@ -46,7 +46,7 @@ class SimonGameController: UIViewController {
     
     
     //MARK:- 5. Firebase Methods
-    var playersDatabase = Database.database().reference()
+    let playersDatabase = Database.database().reference()
     let uid : String = (Auth.auth().currentUser!.uid)
     
     
@@ -224,21 +224,23 @@ class SimonGameController: UIViewController {
     
     //MARK:- 15. the method that takes the high score of the user from the firebase database and check if the score is bigger then it if it is the score value reaplace the high score value in the db
     func checkForHighScore() {
-        var highS = playersDatabase.child("users/\(uid)/highscore").observe(.value) { (snapshot) in
+        let childName : String = "users/\(uid)/highscore"
+        playersDatabase.child(childName).observe(.value) { (snapshot) in
             
-            //TODO: find why it's not working with a Int
-            let hidhSC = snapshot.value as? String?
+            print("snapshot=\(snapshot)")
             
-            print(hidhSC)
+            let hidhSC : Int = snapshot.value as! NSInteger
+            self.updateHiScoreInDB(currentHiScore: hidhSC)
         }
-        
-//        var highScore = Int(highS)
-//        
-//        if highScore < scoreNumber {
-//            highScore = scoreNumber
-//            playersDatabase.child("users/\(uid)/highscore").updateChildValues(["highscore" : "\(highScore)"])
-//        }
     }
+    
+    func updateHiScoreInDB(currentHiScore: Int){
+        let cond : Bool = currentHiScore < scoreNumber
+        if cond {
+            playersDatabase.child("users/\(uid)/highscore").setValue(scoreNumber)
+        }
+    }
+    
     
     //MARK:- 16.playSound method - play the selected sound from the sound array
     func playSound(){

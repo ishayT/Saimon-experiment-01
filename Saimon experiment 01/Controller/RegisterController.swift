@@ -73,7 +73,7 @@ class RegisterController: UIViewController {
             } else {
                 print("Registration Succesful!")
                 let uid : String = (user?.uid)!
-                let highScore : String = "0"
+                let highScore : Int = -1
                 
                 Database.database().reference().child("users").child("\(uid)").child("nickname").setValue(nickName)
                 Database.database().reference().child("users").child("\(uid)").child("highscore").setValue(highScore)
