@@ -46,7 +46,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="201"/>
                                                 <subviews>
                                                     <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLu-Ot-YOI" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
-                                                        <rect key="frame" x="39.5" y="45.5" width="110" height="110"/>
+                                                        <rect key="frame" x="39.5" y="46" width="110" height="110"/>
                                                         <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="110" id="VUL-z2-SiD"/>
@@ -82,7 +82,7 @@
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="201"/>
                                                 <subviews>
                                                     <button opaque="NO" alpha="0.69999999999999996" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NK-sw-aco" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
-                                                        <rect key="frame" x="39.5" y="45.5" width="110" height="110"/>
+                                                        <rect key="frame" x="39.5" y="46" width="110" height="110"/>
                                                         <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="110" id="J1D-dF-LsK"/>
@@ -457,7 +457,7 @@
                                                             <constraint firstAttribute="height" constant="100" id="StJ-lq-4if"/>
                                                             <constraint firstAttribute="width" constant="100" id="aUr-hx-jMI"/>
                                                         </constraints>
-                                                        <state key="normal" title="1">
+                                                        <state key="normal">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -488,7 +488,7 @@
                                                             <constraint firstAttribute="height" constant="100" id="1Pz-b6-IWQ"/>
                                                             <constraint firstAttribute="width" constant="100" id="sRF-s6-np0"/>
                                                         </constraints>
-                                                        <state key="normal" title="2">
+                                                        <state key="normal">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -553,13 +553,13 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="181"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOk-1l-xqO" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
-                                                        <rect key="frame" x="44" y="41" width="100" height="100"/>
+                                                        <rect key="frame" x="44" y="40.5" width="100" height="100"/>
                                                         <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="jl4-Te-9cv"/>
                                                             <constraint firstAttribute="height" constant="100" id="lGE-oZ-zMN"/>
                                                         </constraints>
-                                                        <state key="normal" title="4">
+                                                        <state key="normal">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -584,13 +584,13 @@
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="181"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q68-lD-M6h" customClass="DesignableButton" customModule="Saimon_experiment_01" customModuleProvider="target">
-                                                        <rect key="frame" x="44" y="41" width="100" height="100"/>
+                                                        <rect key="frame" x="44" y="40.5" width="100" height="100"/>
                                                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="9iF-mj-Kke"/>
                                                             <constraint firstAttribute="height" constant="100" id="mky-Ak-Rx1"/>
                                                         </constraints>
-                                                        <state key="normal" title="3">
+                                                        <state key="normal">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
